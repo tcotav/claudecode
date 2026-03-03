@@ -16,33 +16,18 @@ A collection of custom skills for [Claude Code](https://claude.ai/code). Each sk
 ```
 skills/
   <skill-name>/
-    SKILL.md    # skill definition
+    SKILL.md        # skill definition
+scripts/
+  install-ccnotify.sh   # desktop notifications hook installer (macOS)
 ```
 
 ## Adding a Skill
 
 Create a new directory under `skills/` and add a `SKILL.md`. The directory name is the skill name users reference when invoking it. See [CLAUDE.md](CLAUDE.md) for conventions.
 
-## References & Inspiration
+## See Also
 
-- **[Linear Walkthroughs](https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/)** (Simon Willison) — the pattern behind the `walkthrough` skill: prompt an agent to analyze a codebase and produce a structured explanation document using the `showboat` tool.
-
-## Related Projects
-
-- **[tcotav/ccode_infra_starter](https://github.com/tcotav/ccode_infra_starter/)** — A template for safely using Claude Code with Terraform and Helm in GCP infrastructure environments. Expands on the `helm-check` and `tf-plan` skills with safety hooks, audit logging, a Docker devcontainer, and team usage documentation.
-
-## Tools & Utilities
-
-### CCNotify (macOS)
-
-[CCNotify](https://github.com/dazuiba/CCNotify) sends desktop notifications when Claude needs input or finishes a task. Install it with the provided script (requires Homebrew and `jq`):
-
-```bash
-bash scripts/install-ccnotify.sh
-```
-
-The script clones CCNotify to `~/.claude/ccnotify/`, installs `terminal-notifier` via Homebrew, and safely patches `~/.claude/settings.json` with the required hooks. A backup of your settings is made before any changes.
-
-## External Skills & Plugins
-
-- **[obra/superpowers](https://github.com/obra/superpowers)** — A complete software development workflow built on composable skills. Covers design/planning, TDD, git worktrees, code review, debugging, and more. Available as a Claude Code plugin.
+- **[CCNotify](https://github.com/dazuiba/CCNotify)** — macOS desktop notifications when Claude needs input or finishes a task. Install via `bash scripts/install-ccnotify.sh` (requires Homebrew and `jq`).
+- **[tcotav/ccode_infra_starter](https://github.com/tcotav/ccode_infra_starter/)** — Template for safely using Claude Code with Terraform and Helm in GCP environments. Expands on the `helm-check` and `tf-plan` skills with safety hooks, audit logging, and a Docker devcontainer.
+- **[obra/superpowers](https://github.com/obra/superpowers)** — A complete software development workflow built on composable skills. Available as a Claude Code plugin.
+- **[Linear Walkthroughs](https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/)** (Simon Willison) — the pattern behind the `walkthrough` skill.
