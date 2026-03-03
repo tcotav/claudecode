@@ -23,6 +23,10 @@ skills/
 
 Create a new directory under `skills/` and add a `SKILL.md`. The directory name is the skill name users reference when invoking it. See [CLAUDE.md](CLAUDE.md) for conventions.
 
+## References & Inspiration
+
+- **[Linear Walkthroughs](https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/)** (Simon Willison) — the pattern behind the `walkthrough` skill: prompt an agent to analyze a codebase and produce a structured explanation document using the `showboat` tool.
+
 ## External Skills & Plugins
 
 - **[obra/superpowers](https://github.com/obra/superpowers)** — A complete software development workflow built on composable skills. Covers design/planning, TDD, git worktrees, code review, debugging, and more. Available as a Claude Code plugin.
