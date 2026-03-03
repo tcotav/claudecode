@@ -27,6 +27,10 @@ Create a new directory under `skills/` and add a `SKILL.md`. The directory name 
 
 - **[Linear Walkthroughs](https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/)** (Simon Willison) — the pattern behind the `walkthrough` skill: prompt an agent to analyze a codebase and produce a structured explanation document using the `showboat` tool.
 
+## Related Projects
+
+- **[tcotav/ccode_infra_starter](https://github.com/tcotav/ccode_infra_starter/)** — A template for safely using Claude Code with Terraform and Helm in GCP infrastructure environments. Expands on the `helm-check` and `tf-plan` skills with safety hooks, audit logging, a Docker devcontainer, and team usage documentation.
+
 ## External Skills & Plugins
 
 - **[obra/superpowers](https://github.com/obra/superpowers)** — A complete software development workflow built on composable skills. Covers design/planning, TDD, git worktrees, code review, debugging, and more. Available as a Claude Code plugin.
