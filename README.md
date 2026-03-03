@@ -31,6 +31,18 @@ Create a new directory under `skills/` and add a `SKILL.md`. The directory name 
 
 - **[tcotav/ccode_infra_starter](https://github.com/tcotav/ccode_infra_starter/)** — A template for safely using Claude Code with Terraform and Helm in GCP infrastructure environments. Expands on the `helm-check` and `tf-plan` skills with safety hooks, audit logging, a Docker devcontainer, and team usage documentation.
 
+## Tools & Utilities
+
+### CCNotify (macOS)
+
+[CCNotify](https://github.com/dazuiba/CCNotify) sends desktop notifications when Claude needs input or finishes a task. Install it with the provided script (requires Homebrew and `jq`):
+
+```bash
+bash scripts/install-ccnotify.sh
+```
+
+The script clones CCNotify to `~/.claude/ccnotify/`, installs `terminal-notifier` via Homebrew, and safely patches `~/.claude/settings.json` with the required hooks. A backup of your settings is made before any changes.
+
 ## External Skills & Plugins
 
 - **[obra/superpowers](https://github.com/obra/superpowers)** — A complete software development workflow built on composable skills. Covers design/planning, TDD, git worktrees, code review, debugging, and more. Available as a Claude Code plugin.
