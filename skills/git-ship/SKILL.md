@@ -10,7 +10,7 @@ Run `git branch --show-current` and `git rev-parse --abbrev-ref HEAD` to determi
 
 **If on `main` or `master`:**
 
-Check whether all changed files are documentation-only (i.e., only `*.md`, `*.txt`, `*.rst`, `LICENSE`, `CHANGELOG` files are modified):
+Check whether all changed files are documentation-only. Documentation-only means files whose sole purpose is human-readable docs: `README.md`, `CHANGELOG*`, `LICENSE`, `*.txt`, `*.rst`, or files under a `docs/` directory. This does NOT include skill definitions (`SKILL.md`, `skills/**`), configuration files, or any file that affects runtime behavior.
 
 - Run `git diff --name-only HEAD` and `git status --short` to get the full list of changed files.
 - If **all** changes are documentation files: inform the user and ask if they want to continue committing directly to `main`. If they say no, stop here and prompt them to create a branch first.
