@@ -7,6 +7,7 @@ A collection of custom skills for [Claude Code](https://claude.ai/code). Each sk
 | Skill | Description |
 |-------|-------------|
 | [git-ship](skills/git-ship/SKILL.md) | End-to-end git workflow: branch check, stage, commit, and optional PR creation |
+| [pr-describe](skills/pr-describe/SKILL.md) | Write a reviewer-ready PR description: what changed, environments affected, deployment risk, and validation |
 | [helm-check](skills/helm-check/SKILL.md) | Lint and render Helm charts locally — never installs or upgrades |
 | [review](skills/review/SKILL.md) | Critically review a PR — self-configuring on first use: detects the repo's stack and interactively builds a tailored checklist |
 | [tf-plan](skills/tf-plan/SKILL.md) | Run the terraform/tofu fmt → init → plan loop — never applies |
