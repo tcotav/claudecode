@@ -12,6 +12,7 @@ A collection of custom skills for [Claude Code](https://claude.ai/code). Each sk
 | [review](skills/review/SKILL.md) | Critically review a PR — self-configuring on first use: detects the repo's stack and interactively builds a tailored checklist |
 | [tf-plan](skills/tf-plan/SKILL.md) | Run the terraform/tofu fmt → init → plan loop — never applies |
 | [walkthrough](skills/walkthrough/SKILL.md) | Generate a linear code walkthrough using the `showboat` tool |
+| [document-script](skills/document-script/SKILL.md) | Document a script with an intent file, walkthrough, and a `CLAUDE.md` index — supports both human and agent audiences |
 
 ## Structure
 
