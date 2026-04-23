@@ -177,5 +177,6 @@ If the user says yes, invoke `project-sprint-planning`.
 - **Not fetching API docs** — if the external API is identifiable, fetch the docs before asking the user anything; don't make the user transcribe what the docs already say
 - **Finalizing schemas without samples** — if no sample or docs exist and the system talks to an external API, ask if the user can capture a real response before locking in the schema; guessed field names cause rework
 - **Vague data flows** — "data goes to BigQuery" is not enough; name the tables and fields; if a sample exists, derive field names directly from it
+- **Using `\n` in mermaid node labels** — mermaid does not support `\n` for line breaks inside node labels; use `<br/>` instead (e.g. `["Line one<br/>Line two"]`). This applies to both node labels and edge labels.
 - **Missing access requirements** — API keys, service accounts, and vendor approvals take calendar time; they must appear in the design so `project-sprint-planning` surfaces them as paperwork tasks
 - **Writing before approval** — revising a written doc mid-session is wasteful; get verbal approval first
