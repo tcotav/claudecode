@@ -22,6 +22,7 @@ skills/
     SKILL.md        # skill definition
 scripts/
   install-ccnotify.sh   # desktop notifications hook installer (macOS)
+  install-plugins.sh    # registers anthropics/skills marketplace + example-skills plugin
 ```
 
 ## Using Skills in Your Own Repo
@@ -50,6 +51,7 @@ Create a new directory under `skills/` and add a `SKILL.md`. The directory name 
 ## See Also
 
 - **[CCNotify](https://github.com/dazuiba/CCNotify)** — macOS desktop notifications when Claude needs input or finishes a task. Install via `bash scripts/install-ccnotify.sh` (requires Homebrew and `jq`).
+- **[anthropics/skills](https://github.com/anthropics/skills)** — Anthropic's official plugin marketplace with skills like `example-skills`. Register the marketplace and enable the plugin via `bash scripts/install-plugins.sh` (requires `jq`), then restart Claude Code.
 - **[tcotav/ccode_infra_starter](https://github.com/tcotav/ccode_infra_starter/)** — Template for safely using Claude Code with Terraform and Helm in GCP environments. Expands on the `helm-check` and `tf-plan` skills with safety hooks, audit logging, and a Docker devcontainer.
 - **[obra/superpowers](https://github.com/obra/superpowers)** — A complete software development workflow built on composable skills. Available as a Claude Code plugin.
 - **[Linear Walkthroughs](https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/)** (Simon Willison) — the pattern behind the `walkthrough` skill.
